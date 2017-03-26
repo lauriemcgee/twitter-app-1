@@ -1,0 +1,5 @@
+<%= form_tag "/tweets", method: :post do %>
+  <%= label_tag :tweet %>
+  <%= text_field_tag :tweet %>
+  <%= submit_tag "Tweet Away" %>
+<% end %>
