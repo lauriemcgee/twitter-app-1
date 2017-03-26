@@ -1,11 +1,11 @@
 <h4> Edit Tweet </h4>
-<% form_tag "/tweets/#{@tweet.id}", method: :post do %>
-<div>
-<%= %>
-</div>
-<div>
-<%= %>
-</div>
-<div>
-<% %>
-</div>
+<%= form_tag "/tweets/#{@tweet.id}", method: :post do %>
+  <div>
+    <p><%= label_tag :tweet %></p>
+    <p><%= text_field_tag :tweet, @tweet.tweet %></p>
+  </div>
+  <div>
+  <%= submit_tag "Update your thoughts if you dare" %>
+  </div>
+
+<% end %>
