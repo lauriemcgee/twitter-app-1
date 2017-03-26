@@ -1,7 +1,60 @@
-<h1> Tweets </h1>
-<p><a href="/tweets/new"> New Tweet </a></p>
+<section>
+  <div class="row">
+    <h4>Tweets</h4>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <p><a href="/tweets/new"> New Tweet </a></p>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</section>
+
+<section>
   <% @tweets.each do |tweet| %>
-    <%= tweet.user %>
-    <%= tweet.tweet %>
-    <a href="/tweets/<%=tweet.id%>">View</a>
+    <div class="row">
+      <div class="col">
+        <%= tweet.user %>
+      </div>
+      <div class="col">
+        <%= tweet.tweet %>
+      </div>
+      <div class="col">
+        <a href="/tweets/<%=tweet.id%>">View</a>
+      </div>
+    </div>
   <% end %>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+  
