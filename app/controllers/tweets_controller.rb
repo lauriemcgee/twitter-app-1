@@ -14,6 +14,8 @@ class TweetsController < ApplicationController
     redirect_to "/tweets"
   end
   def show
+    @tweet = Tweet.find_by(id: params[:id])
+    render "show.html.erb"
   end
   def edit
   end

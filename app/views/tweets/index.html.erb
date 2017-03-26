@@ -3,4 +3,5 @@
   <% @tweets.each do |tweet| %>
     <%= tweet.user %>
     <%= tweet.tweet %>
+    <a href="/tweets/<%=tweet.id%>">View</a>
   <% end %>
