@@ -7,6 +7,11 @@ class TweetsController < ApplicationController
     render "new.html.erb"
   end
   def create
+    tweet = Tweet.create(
+      user: "Laurie",
+      tweet: params[:tweet]
+      )
+    redirect_to "/tweets"
   end
   def show
   end
